@@ -1,0 +1,187 @@
+.olympic-container {
+  padding: 5px;
+  text-align: center;
+
+}
+
+.easel_top {
+  position: relative;
+  top: 50px;
+  left: 50%;
+  transform:  translate(-50%, 0%);
+  box-sizing: content-box;
+  width: 170px;
+  height: 0;
+  border: 10px solid rgba(0,0,0,0);
+  border-top: 0 solid;
+  border-bottom: 60px solid black;
+  color: rgba(0,0,0,1);
+}
+.easel_back {
+  position: relative;
+  top: 50px;
+  left: 50%;
+  transform:  translate(-50%, 0%);
+  box-sizing: content-box;
+  width: 90%;
+  height: 0;
+  border: 30px solid rgba(0,0,0,0.5);
+  border-top: 0 solid;
+  border-bottom: 700px solid black;
+  color: rgba(0,0,0,1);
+  z-index: -1;
+}
+
+ .easel_front {
+  position: relative;
+  top: -300px;
+  left: 50%;
+  transform:  translate(-50%, -50%);
+  box-sizing: content-box;
+  width: 87%;
+  height: 0;
+  border: 35px solid rgba(0,0,0,0.5);
+  border-top: 0 solid;
+  border-bottom: 680px solid white;
+  color: rgba(0,0,0,1);
+  z-index: 0; 
+} 
+
+#tokyo-logo {
+  height: 400px;
+  width: auto;
+  position: relative;
+
+
+}
+
+.ring-container {
+  margin: auto;
+  padding: 5px;
+  position: relative;
+  height: 185px;
+
+}
+
+.ring {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 7px black solid;
+  border-radius: 50%;
+  transform: translate(-50%, 0%);
+  transition: .5s;
+}
+
+.ring:nth-child(1) {
+  border-color: #0081C8;
+  left: calc(50% - 120px);
+  top: 5px;
+}
+.ring:nth-child(1)::after {
+  content: "";
+  background: url("/assets/computer.png") no-repeat center;
+  background-size: 75%;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;  
+  transition: 1s; 
+}
+
+.ring:nth-child(2) {
+  border-color: #FBB131;
+  left: calc(50% - 60px);
+  top: 75px;
+}
+.ring:nth-child(2)::after {
+  content: "";
+  background: url("/assets/billboard.png") no-repeat center;
+  background-size: 75%;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;  
+  transition: 1s; 
+}
+.ring:nth-child(3) {
+  border-color: black;
+  left: 50%;
+  top: 5px;
+}
+.ring:nth-child(3)::after {
+  content: "";
+  background: url("/assets/bus.png") no-repeat center;
+  background-size: 75%;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;  
+  transition: 1s; 
+}
+.ring:nth-child(4) {
+  border-color: #00A54F;
+  left: calc(50% + 60px);
+  top: 75px;
+}
+.ring:nth-child(4)::after {
+  content: "";
+  background: url("/assets/train.png") no-repeat center;
+  background-size: 75%;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;  
+  transition: 1s; 
+}
+.ring:nth-child(5) {
+  border-color: #EE2E4E;
+  left: calc(50% + 120px);
+  top: 5px;
+}
+.ring:nth-child(5)::after {
+  content: "";
+  background: url("/assets/plane.png") no-repeat center;
+  background-size: 75%;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;  
+  transition: 1s; 
+}
+
+
+.ring:hover::after {
+  opacity: 1;
+}
+.ring:hover {
+  background: white;
+  z-index: 1;
+  height: 105px;
+  width: 105px;
+}

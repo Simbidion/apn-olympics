@@ -184,6 +184,7 @@
   z-index: 1;
   height: 105px;
   width: 105px;
+  box-shadow: inset -3px -3px 5px lightgrey;
 }
 
 *{
@@ -208,6 +209,9 @@
 .column:nth-child(1){
   background: white;
   grid-area: header;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .column:nth-child(2) {
